@@ -1,0 +1,27 @@
+{
+	"name": "selected-posts-widget",
+	"title": "Selected Posts Widget",
+	"version": "0.0.1",
+	"description": "Show selected posts using a widget.",
+	"author": {
+		"name": "campdoug, nerdaryan",
+		"url": "http://campdoug.com"
+	},
+	"license": "GPLv3",
+	"devDependencies": {
+		"grunt": "latest",
+		"grunt-contrib-watch": "latest",
+		"grunt-wp-i18n": "latest",
+		"grunt-contrib-copy": "latest",
+		"grunt-text-replace": "latest",
+		"grunt-contrib-clean": "latest",
+		"grunt-contrib-compress": "latest",
+		"grunt-wp-deploy": "latest",
+		"load-grunt-tasks": "latest"
+	},
+	"scripts": {
+		"test": "dockunit",
+		"preversion": "npm test",
+		"version": "grunt version && git add ."
+	}
+}

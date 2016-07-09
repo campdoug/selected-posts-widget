@@ -1,0 +1,17 @@
+{
+  "generator-plugin-wp": {
+    "name": "Selected Posts Widget",
+    "homepage": "http://campdoug.com",
+    "description": "Show selected posts using a widget.",
+    "version": "0.0.1",
+    "author": "campdoug, nerdaryan",
+    "authoremail": "hello@campdoug.com",
+    "authorurl": "http://campdoug.com",
+    "license": "GPLv3",
+    "slug": "selected-posts-widget",
+    "classname": "Selected_Posts_Widget",
+    "classprefix": "SPW_",
+    "prefix": "cdspw",
+    "year": 2016
+  }
+}

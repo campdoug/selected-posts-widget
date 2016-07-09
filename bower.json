@@ -1,0 +1,18 @@
+{
+  "name": "selected-posts-widget",
+  "description": "Show selected posts using a widget.",
+  "license": "GPLv3",
+  "authors": [
+    "campdoug, nerdaryan"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

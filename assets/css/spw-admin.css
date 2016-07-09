@@ -1,0 +1,33 @@
+.post-suggestion-wrap{
+	position: relative;
+}
+.chef-posts-suggestions {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #d5d5d5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
+    position: absolute;
+    z-index: 999;
+}
+.chef-posts-suggestions > li {
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+    margin: 0;
+    padding: 8px;
+    cursor: pointer;
+}
+.chef-posts-suggestions > li:hover{
+	background: #eee;
+}
+.chef-posts-suggestions > li:last-child{
+	border-bottom: none;
+}
+.selected-posts > div {
+    background: #eee none repeat scroll 0 0;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    margin-top: 10px;
+    padding: 4px 5px;
+}
