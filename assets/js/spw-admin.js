@@ -56,15 +56,37 @@ String.prototype.replaceAll = function(search, replacement) {
 			$('.selected-posts').append(_template);
 		});
 
-		$('body').delegate('.selected-posts > div', 'click', function(e) {
+		$('body').delegate('.selected-posts > div .remove', 'click', function(e) {
 			e.preventDefault();
 
 			var _field = $($(this).closest('.post-suggestion-wrap')).find('input[type="hidden"]');
-			var _id = $(this).data('id');
+			var _id = $(this).parent().data('id');
 			console.log(_id, $(_field).val().replaceAll(_id, ''));
 			$(_field).val( $(_field).val().replaceAll(_id, '') );
 			
-			$(this).remove();
+			$(this).parent().remove();
 		});
+
+		function bindSortable(){
+			$('.selected-posts').sortable({
+				helper:'clone', 
+				stop : function(event,ui){ 
+					var divs = $(ui.item).closest('.selected-posts').find('[data-id]');
+					var _allIDs = $(divs).map(function() {
+						if($(this).data('id') !== '{id}')
+					    	return $(this).data('id');
+					}).get();
+					var _field = $(ui.item).closest('.post-suggestion-wrap').find('input[type="hidden"]');
+					$(_field).val( _allIDs.join(' ') );
+				}
+			});
+		};
+
+		bindSortable();
+
+		$(document).on('widget-updated', function(e, widget){
+			bindSortable();
+		});
+
 	});
 })(jQuery)

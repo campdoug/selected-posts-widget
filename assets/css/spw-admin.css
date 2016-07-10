@@ -24,10 +24,13 @@
 .selected-posts > div {
     background: #eee none repeat scroll 0 0;
     border-radius: 2px;
-    display: inline-block;
+    display: block;
     font-size: 12px;
-    margin-bottom: 10px;
-    margin-right: 8px;
+    margin-bottom: 5px;
     margin-top: 10px;
     padding: 4px 5px;
+}
+
+.selected-posts > div .remove {
+    float: right;
 }

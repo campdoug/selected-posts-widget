@@ -131,8 +131,11 @@ final class Selected_Posts_Widget {
 	}
 
 	public function admin_enqueue_scripts(){
-		wp_enqueue_script( 'spw-admin-js', $this->url .'/assets/js/spw-admin.js' );
-		wp_enqueue_style( 'spw-admin-css', $this->url .'/assets/css/spw-admin.css' );
+		$screen = get_current_screen();
+		if( 'widgets' == $screen->base ){
+			wp_enqueue_script( 'spw-admin-js', $this->url .'/assets/js/spw-admin.js', array('jquery-ui-sortable') );
+			wp_enqueue_style( 'spw-admin-css', $this->url .'/assets/css/spw-admin.css' );
+		}
 	}
 
 	public function posts_suggestion() {
