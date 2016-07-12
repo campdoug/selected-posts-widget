@@ -1,5 +1,5 @@
 # Selected Posts Widget #
-**Contributors:**      campdoug, nerdaryan
+**Contributors:**      Camp Doug, nerdaryan
 **Donate link:**       http://campdoug.com
 **Tags:**
 **Requires at least:** 4.4
@@ -10,17 +10,17 @@
 
 ## Description ##
 
-Show selected posts using a widget.
+Selected Posts Widget allows you to search via an autocomplete field for posts on your site. Once you select and have multiple posts in the widget, you can easily drag and drop these posts in order to place them in your desired order.
 
 ## Installation ##
-
-### Manual Installation ###
-
-1. Upload the entire `/selected-posts-widget` directory to the `/wp-content/plugins/` directory.
-2. Activate Selected Posts Widget through the 'Plugins' menu in WordPress.
+1. Upload the Selected Posts Widget folder to the '/wp-content/plugins/ directory
+2. Activate the Selected Posts Widget plugin through the 'Plugins' menu in WordPress
+3. Go to appearance > widgets > look for selected posts widget and add it to an widget section
 
 ## Frequently Asked Questions ##
 
+**How do I reorder posts in the widget?**
+Once you add a post, click save and you will then be able to drag and drop re-order.
 
 ## Screenshots ##
 
