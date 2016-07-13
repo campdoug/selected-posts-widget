@@ -1,7 +1,7 @@
 {
 	"name": "selected-posts-widget",
 	"title": "Selected Posts Widget",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Show selected posts using a widget.",
 	"author": {
 		"name": "campdoug, nerdaryan",

@@ -3,7 +3,7 @@
  * Plugin Name: Selected Posts Widget
  * Plugin URI:  http://campdoug.com
  * Description: Show selected posts using a widget.
- * Version:     0.0.1
+ * Version:     0.0.2
  * Author:      campdoug, nerdaryan
  * Author URI:  http://campdoug.com
  * Donate link: http://campdoug.com
@@ -14,7 +14,7 @@
  * @link http://campdoug.com
  *
  * @package Selected Posts Widget
- * @version 0.0.1
+ * @version 0.0.2
  */
 
 /**
@@ -38,7 +38,7 @@
 /**
  * Main initiation class
  *
- * @since  NEXT
+ * @since  0.0.2
  */
 final class Selected_Posts_Widget {
 
@@ -46,15 +46,15 @@ final class Selected_Posts_Widget {
 	 * Current version
 	 *
 	 * @var  string
-	 * @since  NEXT
+	 * @since  0.0.2
 	 */
-	const VERSION = '0.0.1';
+	const VERSION = '0.0.2';
 
 	/**
 	 * URL of plugin directory
 	 *
 	 * @var string
-	 * @since  NEXT
+	 * @since  0.0.2
 	 */
 	protected $url = '';
 
@@ -62,7 +62,7 @@ final class Selected_Posts_Widget {
 	 * Path of plugin directory
 	 *
 	 * @var string
-	 * @since  NEXT
+	 * @since  0.0.2
 	 */
 	protected $path = '';
 
@@ -70,7 +70,7 @@ final class Selected_Posts_Widget {
 	 * Plugin basename
 	 *
 	 * @var string
-	 * @since  NEXT
+	 * @since  0.0.2
 	 */
 	protected $basename = '';
 
@@ -78,14 +78,14 @@ final class Selected_Posts_Widget {
 	 * Singleton instance of plugin
 	 *
 	 * @var Selected_Posts_Widget
-	 * @since  NEXT
+	 * @since  0.0.2
 	 */
 	protected static $single_instance = null;
 
 	/**
 	 * Creates or returns an instance of this class.
 	 *
-	 * @since  NEXT
+	 * @since  0.0.2
 	 * @return Selected_Posts_Widget A single instance of this class.
 	 */
 	public static function get_instance() {
@@ -99,7 +99,7 @@ final class Selected_Posts_Widget {
 	/**
 	 * Sets up our plugin
 	 *
-	 * @since  NEXT
+	 * @since  0.0.2
 	 */
 	protected function __construct() {
 		$this->basename = plugin_basename( __FILE__ );
@@ -110,7 +110,7 @@ final class Selected_Posts_Widget {
 	/**
 	 * Add hooks and filters
 	 *
-	 * @since  NEXT
+	 * @since  0.0.2
 	 * @return void
 	 */
 	public function hooks() {
@@ -122,7 +122,7 @@ final class Selected_Posts_Widget {
 	/**
 	 * widgets_init hooks.
 	 *
-	 * @since  NEXT
+	 * @since  0.0.2
 	 * @return void
 	 */
 	public function widgets_init() {
@@ -170,7 +170,7 @@ final class Selected_Posts_Widget {
  * Grab the Selected_Posts_Widget object and return it.
  * Wrapper for Selected_Posts_Widget::get_instance()
  *
- * @since  NEXT
+ * @since  0.0.2
  * @return Selected_Posts_Widget  Singleton instance of plugin class.
  */
 function cd_selected_posts_widget() {
